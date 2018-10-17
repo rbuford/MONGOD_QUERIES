@@ -45,3 +45,4 @@ db.product.find({ price: {$gt: 10.00 } });
 db.product.remove({
   name: {$eq: "Crest"},
 }, true);# MONGO_Q
+# MONGO_Q
