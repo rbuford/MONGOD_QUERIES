@@ -1,0 +1,61 @@
+// type queries and inserts in here and then copy and paste
+
+db.students.find(
+{
+    "classes.credits": {$gte:2}
+});
+  
+db.students.insert(
+{
+    name: "Ryan",
+    dorm: 
+    {
+        name: "Lion",
+        roomNumber: 1
+    },
+    
+    classes:
+    [
+        {name: "CIS 445", days: ["Mon", "Wed"], credits: 3},
+        {name: "CS 255", days: ["Tue", "Thur"], credits: 3},
+        {name: "CS 311", days: ["Tue", "Thur"], credits: 3}
+    ]
+    
+});
+
+
+db.students.insert(
+{
+    name: "Megan",
+    dorm: 
+    {
+        name: "Charger",
+        roomNumber: 1
+    },
+    
+    classes:
+    [
+        {name: "ENG 101", days: ["Tue", "Thur"], credits: 3}
+    ]
+    
+});
+
+db.students.insert(
+{
+    name: "Brady",
+    dorm: 
+    {
+        name: "Tide",
+        roomNumber: 18
+    },
+    
+    classes:
+    [
+        {name: "HIS 101", days: ["Mon", "Wed", "Fri"], redits: 3}
+    ]
+    
+});
+  
+  
+  )# MONGOD_QUERIES
+# MONGOD_QUERIES
